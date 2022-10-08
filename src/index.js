@@ -21,13 +21,31 @@ function createDiv(count) {
 
 var tree = createDiv(count);               // We need an initial tree
 var rootNode = createElement(tree);     // Create an initial root DOM node ...
-debugger
-document.body.appendChild(rootNode);
+// document.body.appendChild(rootNode);
 
 
 
 
-render()
+
+
+
+
+const rootEle = document.getElementById('root')
+function caseEle() {
+  
+
+
+
+
+  return (
+    <div>hi</div>
+  )
+}
+
+
+
+
+render(caseEle, rootEle)
 
 
 
