@@ -24,11 +24,10 @@ var rootNode = createElement(tree);     // Create an initial root DOM node ...
 
 
 
-
-
 const rootEle = document.getElementById('root')
 function caseEle() {
   let [text, textUpdate] = useState('hi')
+  let [counter, counterUpdate] = useState(0)
 
   useEffect(() => {
 
