@@ -1,0 +1,28 @@
+{
+  "name": "ireact",
+  "version": "1.0.0",
+  "description": "iReact framework",
+  "main": "./dist/ireact.min.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "serve ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EchoFUN/iReact.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cookie_js": "^1.4.2",
+    "promise-polyfill": "^8.2.0",
+    "webpack": "^5.27.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
