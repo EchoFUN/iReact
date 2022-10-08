@@ -1,8 +1,7 @@
 import { render } from './render';
 var h = require('virtual-dom/h');
 var createElement = require('virtual-dom/create-element')
-
-
+import { useState, useEffect } from './hooks'
 
 var count = 0;
 
@@ -27,16 +26,18 @@ var rootNode = createElement(tree);     // Create an initial root DOM node ...
 
 
 
-
-
-
 const rootEle = document.getElementById('root')
 function caseEle() {
-  
+  let [text, textUpdate] = useState('hi')
+
+  useEffect(() => {
+
+  }, [])
 
 
-
-
+  let React = {
+    createElement
+  }
   return (
     <div>hi</div>
   )
@@ -45,7 +46,7 @@ function caseEle() {
 
 
 
-render(caseEle, rootEle)
+render(caseEle(), rootEle)
 
 
 
